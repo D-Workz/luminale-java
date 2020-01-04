@@ -18,7 +18,7 @@ public class MarqeuePanel extends JPanel implements Runnable
         label.setForeground(new Color(255,255,255));
 
         add(label);
-        setSize(d);
+        setPreferredSize(d);
         setOpaque(true);
         setBackground(new Color(0,0,0));
         label.setLocation(this.getWidth()/2,0);

@@ -2,14 +2,15 @@ import input.InputStream;
 import output.OutputStream;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Luminale extends JFrame {
     private OutputStream output;
     private InputStream input;
 
     public Luminale(){
-        input = new InputStream();
-        output = new OutputStream();
+        input = new InputStream(new Dimension(400, 400));
+        output = new OutputStream(new Dimension(400, 600));
 
     }
 
@@ -19,7 +20,7 @@ public class Luminale extends JFrame {
 
         new Luminale();
 
-        InputStream inputStream = new InputStream();
+//        InputStream inputStream = new InputStream();
 //        JButton b=new JButton("click");//creating instance of JButton
 //        b.setBounds(130,100,100, 40);//x axis, y axis, width, height
 //
