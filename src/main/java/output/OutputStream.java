@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class OutputStream extends LFrame {
     private List wordsToShow;
-    private MarqeuePanel marqeuePanel;
+    public MarqeuePanel marqeuePanel;
     private Color fontColor;
     private Color backgroundColor;
     private int fontSize;
@@ -18,19 +18,17 @@ public class OutputStream extends LFrame {
     public OutputStream(Dimension d) {
         super(d);
         this.setTitle("Output");
-        this.marqeuePanel = new MarqeuePanel(this.contentDim,"hans");
         this.initOutputStream();
 //        this.fontColor = new Color();
 //        this.backgroundColor;
 //        this.fontSize;
 
-        this.add(this.marqeuePanel);
     }
 
 
 
     private void initOutputStream() {
-
+        this.marqeuePanel = new MarqeuePanel(this.contentDim,"hans");
         this.content.add(this.marqeuePanel);//adding button in JFrame
         JTextField textField = new JTextField();
 //        textField.setBounds(128, 128, 86, 20);
@@ -43,14 +41,6 @@ public class OutputStream extends LFrame {
         this.options.add(lblName);
 
 
-
-//        this.f.setSize(400,500);//400 width and 500 height
-//        f.setLayout(null);//using no layout managers
-//        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-
-
-
-        this.marqeuePanel.run();//        this.f.add(b);//adding button in JFrame
 
     }
 

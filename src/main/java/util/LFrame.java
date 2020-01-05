@@ -51,10 +51,10 @@ public class LFrame extends JFrame {
     private void initPanels(){
         this.add(mainPanel, BorderLayout.CENTER);
         mainPanel.setPreferredSize(this.frameSize);
-        content.setBackground(Color.BLUE);
+        content.setBackground(Color.GRAY);
         content.setPreferredSize(this.contentDim);
         content.setOpaque(true);
-        options.setBackground(Color.GREEN);
+        options.setBackground(Color.DARK_GRAY);
         options.setPreferredSize(this.optionsDim);
         options.setOpaque(true);
         mainPanel.add(content);

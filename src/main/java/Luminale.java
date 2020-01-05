@@ -9,8 +9,9 @@ public class Luminale extends JFrame {
     private InputStream input;
 
     public Luminale(){
-        input = new InputStream(new Dimension(400, 400));
+
         output = new OutputStream(new Dimension(400, 600));
+        input = new InputStream(new Dimension(400, 400), this.output);
 
     }
 
